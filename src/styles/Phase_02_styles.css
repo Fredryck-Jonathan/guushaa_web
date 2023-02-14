@@ -1,0 +1,48 @@
+#phase_2_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gallery_music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 20px 200px 20px;
+  position: relative;
+}
+
+.diagonal-section_bottom {
+  /* Used to position the diagonal area */
+  z-index: 10;
+}
+
+.diagonal-section__diagonal_bottom {
+  /* Absolute position */
+  left: -150px;
+  position: absolute;
+  bottom: -80px;
+  /* Take full size */
+  height: 150px;
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin: auto;
+  /* Create diagonal sides */
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  /* Background color */
+  background-color: white;
+  /* Displayed under the main content */
+  z-index: 0;
+}
+/*# sourceMappingURL=Phase_02_styles.css.map */

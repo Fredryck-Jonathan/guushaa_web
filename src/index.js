@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client'
 import './styles/index_styles.css';
 import App from './App'
 
-import Header from './components/Header'
+
 import Footer from './components/Footer'
 
 
@@ -13,7 +13,7 @@ const root = createRoot(container)
     root.render(
         <React.StrictMode>
             <Router>
-                <Header/>
+
                 <App/>
                 <Footer/>
             </Router>

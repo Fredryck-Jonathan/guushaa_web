@@ -1,0 +1,160 @@
+.card_music_div {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background-color: black;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.card_music_div:hover .poster img {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.card_music_div:hover .poster::before {
+  bottom: 0px;
+}
+
+.card_music_div:hover .details {
+  bottom: 40px;
+}
+
+.card_music_div .poster {
+  position: relative;
+  overflow: hidden;
+}
+
+.card_music_div .poster::before {
+  content: '';
+  position: absolute;
+  bottom: -160px;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, black), to(transparent));
+  background: linear-gradient(0deg, black 50%, transparent);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card_music_div .poster img {
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card_music_div .details {
+  position: absolute;
+  bottom: -160px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card_music_div .details h4 {
+  color: white;
+  font-size: 35px;
+  max-width: 180px;
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+}
+
+.card_music_div .details h5 {
+  font-size: 14px;
+  color: white;
+  margin: 0px;
+}
+
+.card_music_div .details .tags {
+  position: relative;
+  margin-top: 15px;
+}
+
+.card_music_div .details .tags span {
+  padding: 2px 5px 2px 5px;
+  color: white;
+  background-color: aqua;
+  border-radius: 4px;
+}
+
+.card_music_div .details p {
+  width: 90%;
+  margin-top: 20px;
+  color: white;
+}
+
+.card_music_div .details button {
+  padding: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 20px;
+  border: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card_music_div .details button:hover {
+  background-color: #437197;
+  color: azure;
+}
+
+.card_music_div .details .audio_div {
+  display: none;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+}
+
+.card_music_div .details .audio_div .info_music {
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card_music_div .details .audio_div .info_music h5 {
+  font-size: 35px;
+  color: black;
+  padding: 20px;
+}
+
+.card_music_div .details .audio_div .info_music button {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  margin-right: 10px;
+}
+
+.card_music_div .details .audio_div .info_music button:hover {
+  background-color: black;
+}
+
+.card_music_div .details .audio_div audio {
+  width: 100%;
+  color: black;
+}
+/*# sourceMappingURL=Card_music_styles.css.map */

@@ -1,0 +1,92 @@
+@import 'color';
+
+.presentation_section{
+
+display: flex;
+flex-direction: column;
+overflow: hidden;
+position: relative;
+
+width: 100%;
+height: 600px;
+padding-bottom: 100px;
+
+    .presentation{
+
+        display: flex;
+
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+
+        .background_album_video{
+
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            filter: brightness(20%);
+            width: 100%;
+
+
+        }
+
+        .img_presentation{
+
+            padding: 100px;
+            img{
+
+                width: 300px;
+
+                border-radius: 50px;
+
+
+            }
+
+
+
+        }
+
+        .text_presentation{
+
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            color: white;
+
+            h4{
+
+                font-size: 45px;
+                margin: 0px;
+
+            }
+
+            .description_presentation{
+
+
+                font-size: 25px;
+                margin-top: 35px;
+
+            }
+
+            .date_presentation{
+
+
+                font-size: 20px;
+                margin: 0px;
+            
+            }
+
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+}

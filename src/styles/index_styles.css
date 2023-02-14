@@ -1,64 +1,7 @@
-@charset "UTF-8";
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  margin: auto;
+  margin: 0;
   padding: 0;
-  font-family: 'Kanit', Arial, Helvetica, sans-serif;
-}
-
-#root {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-/* Modification de la barre de défilement*/
-/* Chrome, Edge,...*/
-body::-webkit-scrollbar {
-  width: 10px;
-  /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: #c7c7c7;
-  /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #3A559A;
-  /* color of the scroll thumb */
-  border-radius: 10px;
-  /* roundness of the scroll thumb */
-  border: 2px solid #bebebe;
-  /* creates padding around scroll thumb */
-}
-
-/*Mozila firefox*/
-body {
-  scrollbar-width: thin;
-  /* "auto" or "thin" */
-  scrollbar-color: #3A559A #858585;
-  /* scroll thumb and track */
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  list-style: none;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=index_styles.css.map */

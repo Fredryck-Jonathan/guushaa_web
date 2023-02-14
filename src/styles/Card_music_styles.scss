@@ -1,0 +1,199 @@
+@import 'color';
+
+
+.card_music_div{
+
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    overflow: hidden;
+
+    &:hover{
+
+
+
+        .poster{
+
+            img{
+
+             transform: translateY(-50px);  
+             filter: blur(5px); 
+
+            }
+
+            &::before{
+
+                bottom: 0px;
+
+            }
+
+
+
+        }
+
+        .details{
+
+            bottom: 40px;
+
+        }
+
+    }
+   
+    .poster{
+
+        position: relative;
+        overflow: hidden;
+
+        &::before{
+
+            content: '';
+            position: absolute;
+            bottom: -160px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, black 50%, transparent) ;
+            transition: 0.5s;
+            z-index: 1;
+
+        }
+
+        img{
+
+            height: 100%;
+            transition: 0.5s;
+
+
+        }
+    }
+
+    .details{
+
+        position:absolute; 
+        bottom: -160px;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        padding: 20px;
+        transition: 0.5s;
+
+        h4{
+
+            color: white;
+            font-size: 35px;
+            max-width: 180px;
+            padding: 0px 0px 10px 0px;
+            margin: 0px;
+        }
+
+        h5{
+
+            font-size: 14px;
+            color: white;
+            margin: 0px;
+
+        }
+
+        .tags{
+
+            position: relative;
+            margin-top: 15px;
+
+            span{
+
+                padding: 2px 5px 2px 5px;
+                color: white;
+                background-color: aqua;
+                border-radius: 4px;
+
+
+            }
+        }
+
+        p{
+
+            width: 90%;
+            margin-top: 20px;
+            color: white;
+
+        }
+
+        button{
+
+            padding: 20px;
+            align-self: center;
+            border-radius: 20px;
+            border: 0px;
+            transition: 0.5s;
+
+            &:hover{
+
+                background-color:  rgb(67, 113, 151);
+                color: azure;
+
+            }
+
+        }
+
+        .audio_div{
+
+            display: none;
+            position: fixed;
+            flex-direction: column;
+            background-color: white;
+            z-index: 200;
+
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 140px;
+
+            .info_music{
+
+                z-index: 20;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                h5{
+
+                    font-size: 35px;
+                    color: black;
+                    padding: 20px ;
+
+                }
+
+                button{
+
+                    font-size: 25px;
+                    font-weight: bold;
+                    padding: 10px 15px 10px 15px;
+                    margin-right: 10px;
+
+                    &:hover{
+
+                        background-color: black;
+
+                    }
+
+
+
+                }
+
+            }
+
+            audio{
+
+                width: 100%;
+                color: black;
+
+            }
+
+        }
+
+
+    }
+}
+

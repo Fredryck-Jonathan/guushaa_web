@@ -1,53 +1,150 @@
-@import "color" ;
+@import 'color';
 
 
 #accueil{
 
-    height: 800px;
-    background-color: $secondary-color;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    padding-top: 250px;
+    height: 1080px;
+    background-color: black;
+    
+    #page_accueil{
 
-        #logo_accueil{
-            z-index: 3;
-            width: 500px;
-            
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        align-items: center;
+        gap: 100px;
+
+    }
+    
+    #background-video {
+
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        filter: blur(5px) grayscale(50%) brightness(20%);
+
+
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        
+    }
+
+    #logo_guushaa{
+
+
+        top: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
+
+        img{
+
+            width: 300px;
+            margin: 0;
+
 
         }
 
         p{
 
-        z-index: 2;
-        color: $main-color;
-        font-size: 25px;
-
-        }
-
-        a{
-
-            z-index: 1;
-            padding: 20px;
-            background-color: $main-color;
-            border-radius: 20px;
-            color: $secondary-color;            
-            border: solid 1px $secondary-color;
-            cursor: pointer;
-
-            transition: background-color 1s ease-out, color 1s ease-out ,border 1s ease-out;
-
-
-        }
-
-        a:hover{
-
-            background-color: $secondary-color;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
             color: $main-color;
-            border: solid 1px $main-color;
+
+        }
+
+    }
+
+    #partie_music{
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h3{
+
+            font-size: 30px;
+            color: $main-color;
+            text-align: center;
+
+        }
+
+    }
+
+    #gallery_boutons_music{
+
+        display: flex;
+        gap: 50px;
+
+        bottom: 500px;
+
+
+        .bouton_music{
+
+            display: flex;
+            position: relative;
+            width: 300px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 50px;
+
+
+
+            video{
+            
+                margin-top: -25px;
+                width: 300px;
+                position: absolute;
+                z-index: 0;
+
+                width: 100%;
+                object-fit: cover;
+
+            }
+
+            a{
+
+                z-index: 1;
+                width: 300px;
+                height: 120px;
+                border: none;
+                position: absolute;
+                font-size: 25px;
+                font-weight: 800;
+                text-decoration: none;
+                transition: all 0.2s ease-out;
+                border-radius: 50px;
+                color: black;
+                background-color: rgba($color: white, $alpha: 1);
+                cursor: pointer;
+                text-align: center;
+                padding-top: 12%;
+
+                &:hover{
+
+                    background-color: rgba($color: black, $alpha: 0.7);
+                    color: $main-color;
+                    
+
+                }
+
+            }
+
 
 
         }
+
     }
+
+}
+

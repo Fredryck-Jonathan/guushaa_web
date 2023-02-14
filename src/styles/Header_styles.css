@@ -1,98 +1,24 @@
-#header_nav {
-  position: fixed;
-  z-index: 1000;
-  background-color: white;
-  width: 100%;
-  -webkit-transform: translateY(-60px);
-          transform: translateY(-60px);
-}
-
-#header_nav.active {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-li, #header_nav {
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-  transition: -webkit-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
-}
-
-#ul_header {
-  position: absolute;
-  width: 100%;
+.header_div {
+  height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+}
+
+.header_div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 35px;
+  padding: 0;
+  padding-left: 15px;
   margin: 0;
-  padding: 0px;
+  color: black;
 }
-
-#ul_header li a {
-  display: block;
-  padding: 10px;
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 142.6%;
-  /* or 34px */
-  margin: auto;
-  white-space: nowrap;
-  color: #0f1b2e;
-  -webkit-transition: color 0.5s ease-out 10ms;
-  transition: color 0.5s ease-out 10ms;
-  text-align: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#ul_header li {
-  width: 150px;
-}
-
-#ul_header li a:hover {
-  color: #a16203;
-}
-
-#ul_header li.active {
-  background-color: #0f1b2e;
-}
-
-#ul_header li.active a {
-  color: white;
-}
-
-.slide {
-  position: absolute;
-  background: #0f1b2e;
-  z-index: -1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 0;
-  width: 150px;
-  height: 100%;
-}
-
-#ul_header li:nth-child(1).active ~ .slide {
-  left: 0;
-  opacity: 1;
-}
-
-#ul_header li:nth-child(2).active ~ .slide {
-  left: 150;
-  opacity: 1;
-}
-
-#ul_header li:nth-child(3).active ~ .slide {
-  left: 300;
-  opacity: 1;
-}
-/*# sourceMappingURL=Header_styles.css.map */
+/*# sourceMappingURL=header_styles.css.map */
