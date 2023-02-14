@@ -1,5 +1,5 @@
 /*Style(s)*/
-import '../styles/accueil_styles.css'
+import '../styles/Accueil_styles.css'
 
 /*Composant*/ 
 

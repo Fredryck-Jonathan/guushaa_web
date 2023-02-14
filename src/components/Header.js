@@ -1,5 +1,5 @@
 /*Style(s)*/
-import '../styles/header_styles.css'
+import '../styles/Header_styles.css'
 
 /*Composant*/ 
 
@@ -10,7 +10,7 @@ import React from "react";
 /*ajout du tableau de la base de données */
 
 
-function header() {
+function header(){
 
     return (
 
@@ -18,7 +18,6 @@ function header() {
             <a href='/'className='retour' alt='revenir au menu'>
                 <ion-icon name="arrow-back-outline"></ion-icon>
             </a>
-
             </div>
     )
 }
