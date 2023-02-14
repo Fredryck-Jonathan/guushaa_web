@@ -12,8 +12,6 @@ import React from "react";
 
 function header() {
 
-
-
     return (
 
         <div className='header_div'>
